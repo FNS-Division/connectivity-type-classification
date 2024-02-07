@@ -1,0 +1,141 @@
+Please provide the most detailed version of a known connectivity_type following the classification and examples below.
+
+Example: "wired > fiber > GPON" or "GPON"
+Example: "wireless > terrestrial > point-to-area > 4g > frequency_band: 900 > technology_standard: LTE" or LTE 900
+Example: "wireless > satellite > leo" or "leo"
+Example: "wireless > satellite > leo > technology_standard: Starlink > frequency_band: Ku-band" or "leo Starlink Ku-band"
+Example: "wireless > satellite > unknown_satellite" or "unknown_satellite"
+Example: "wireless > unknown_wireless" or unknown_wireless" 
+
+connectivity_type  
+│  
+├── wired  
+│   │  
+│   ├── fiber  
+│   │   │  
+│   │   └── technology_standard  
+│   │       └─ [Examples: 100BASE-FX, 10GBASE-LR, GPON (ITU-T G.984), XG-PON (ITU-T G.987), etc.]  
+│   │  
+│   ├── metallic  
+│   │   │  
+│   │   └── technology_standard  
+│   │       └─ [Examples: ADSL (ITU G.992.1), VDSL (ITU G.993.1), G.fast (ITU G.9700/G.9701), DOCSIS 3.1, etc.]  
+│   │  
+│   ├── other
+│   │   │  
+│   │   └── technology_standard     
+│   │
+│   └── unknown_wired  
+│  
+└── wireless  
+    │  
+    ├── terrestrial  
+    │   │  
+    │   ├── point-to-area (cellular)  
+    │   │   │  
+    │   │   ├── 2g  
+    │   │   │   │  
+    │   │   │   ├── frequency_band  
+    │   │   │   │   └─ [Examples: 850/900/1800/1900 MHz]  
+    │   │   │   │  
+    │   │   │   └── technology_standard  
+    │   │   │       └─ [Examples: GSM, GPRS, EDGE]  
+    │   │   │  
+    │   │   ├── 3g  
+    │   │   │   │  
+    │   │   │   ├── frequency_band  
+    │   │   │   │   └─ [Examples: 850/900/1900/2100 MHz]  
+    │   │   │   │  
+    │   │   │   └── technology_standard  
+    │   │   │       └─ [Examples: UMTS, CDMA2000, HSPA]  
+    │   │   │  
+    │   │   ├── 4g  
+    │   │   │   │  
+    │   │   │   ├── frequency_band  
+    │   │   │   │   └─ [Examples: 700/800/1700/1800/2600 MHz]  
+    │   │   │   │  
+    │   │   │   └── technology_standard  
+    │   │   │       └─ [Examples: LTE, WiMAX]  
+    │   │   │  
+    │   │   ├── 5g  
+    │   │   │   │  
+    │   │   │   ├── frequency_band  
+    │   │   │   │   └─ [Examples: 900/1800/2600/3500/3700 MHz]  
+    │   │   │   │  
+    │   │   │   └── technology_standard  
+    │   │   │       └─ [Examples: NR (New Radio)]  
+    │   │   │
+    │   │   ├── other
+    │   │   │   │  
+    │   │   │   ├── frequency_band  
+    │   │   │   │   └─ [Examples: 900/1800/2600/3500/3700 MHz]  
+    │   │   │   │  
+    │   │   │   └── technology_standard  
+    │   │   │       └─ [Examples: IEEE 802.11ax (Wi-Fi 6)]  
+    │   │   │
+    │   │   └── unknown_p2a  
+    │   │  
+    │   ├── point-to-point (radiolink connecting only 2 points)  
+    │   │   │  
+    │   │   ├── radio  
+    │   │   │   │  
+    │   │   │   ├── frequency_band  
+    │   │   │   │   └─ [Examples: 2.4 GHz, 5 GHz for Wi-Fi; various for proprietary radio links]  
+    │   │   │   │  
+    │   │   │   └── technology_standard    
+    │   │   │       └─ [Examples: IEEE 802.11ac (Wi-Fi 5), Licensed microwave links]    
+    │   │   │    
+    │   │   ├── optical    
+    │   │   │   │    
+    │   │   │   └── technology_standard    
+    │   │   │       └─ [Examples: Free-space optical communication (FSO) standards]    
+    │   │   │
+    │   │   ├── other
+    │   │   │   │  
+    │   │   │   ├── frequency_band  (if applicable)
+    │   │   │   │  
+    │   │   │   └── technology_standard  
+    │   │   │    
+    │   │   └── unknown_p2p    
+    │   │    
+    │   └── unknown_terrestrial    
+    │    
+    ├── satellite    
+    │   │    
+    │   ├── leo    
+    │   │   │    
+    │   │   ├── technology_standart    
+    │   │   │   └─ [Examples: Starlink (proprietary)]
+    │   │   │   
+    │   │   └── frequency_band    
+    │   │       └─ [Examples: L-band, S-band, Ka-band]      
+    │   │    
+    │   ├── meo    
+    │   │   │    
+    │   │   ├── technology_standart    
+    │   │   │   └─ [Examples: O3b (proprietary)]
+    │   │   │   
+    │   │   └── frequency_band    
+    │   │       └─ [Examples: L-band, S-band, Ka-band]    
+    │   │    
+    │   ├── geo    
+    │   │   │    
+    │   │   ├── technology_standart    
+    │   │   │   └─ [Examples: Star One D2 (proprietary)]
+    │   │   │
+    │   │   └── frequency_band    
+    │   │       └─ [Examples: C-band, Ku-band, Ka-band] 
+    │   │  
+    │   ├── other
+    │   │   │    
+    │   │   ├── orbit_type     
+    │   │   │    
+    │   │   ├── technology_standart    
+    │   │   │   └─ [Examples: C-band, Ku-band, Ka-band]
+    │   │   │	
+    │   │   └── frequency_band      
+    │   │       └─ [Examples: C-band, Ku-band, Ka-band]     
+    │   │    
+    │   └── unknown_satellite    
+    │    
+    └── unknown_wireless
