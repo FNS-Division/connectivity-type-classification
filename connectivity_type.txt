@@ -3,7 +3,7 @@ Please provide the most detailed version of a known connectivity_type following 
 Examples of providing the data:
 
 Example: "wired > fiber > GPON" or "GPON"
-Example: "wireless > terrestrial > point-to-area > 4g > frequency_band: 900 > technology_standard: LTE" or "LTE 900"
+Example: "wireless > terrestrial > point-to-area > 4g > technology_standard: LTE > frequency_band: 900" or "LTE 900"
 Example: "wireless > satellite > leo" or "leo"
 Example: "wireless > satellite > leo > technology_standard: Starlink > frequency_band: Ku-band" or "leo Starlink Ku-band"
 Example: "wireless > satellite > unknown_satellite" or "unknown_satellite"
