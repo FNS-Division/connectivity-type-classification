@@ -1,4 +1,5 @@
 Instructions for the Enumerator:  
+
 As an enumerator tasked with filling out a data questionnaire on connectivity types, please follow the detailed classification structure provided. Your goal is to capture the most specific information available for each connectivity instance you encounter. Use the hierarchical classification to guide your data entry, starting from the broad category and narrowing down to the specific technology and its attributes.  
 Here are the steps you should follow:  
 1. Determine the main category of the connectivity type: wired or wireless. If this cannot be identified, use "unknown_connectivity_type".  
