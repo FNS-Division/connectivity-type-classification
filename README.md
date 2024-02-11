@@ -1,6 +1,6 @@
-Instructions for the Enumerator:  
+### Instructions for the Enumerator:  
 
-As an enumerator tasked with filling out a data questionnaire on connectivity types, please follow the detailed classification structure provided. Your goal is to capture the most specific information available for each connectivity instance you encounter. Use the hierarchical classification to guide your data entry, starting from the broad category and narrowing down to the specific technology and its attributes.  
+As an enumerator tasked with filling out a data questionnaire on connectivity types, please follow the detailed classification structure provided in [connectivity_type.txt](https://github.com/FNS-Division/connectivity-type-classification/blob/main/connectivity_type.txt) file. Your goal is to capture the most specific information available for each connectivity instance you encounter. Use the hierarchical classification to guide your data entry, starting from the broad category and narrowing down to the specific technology and its attributes.  
 Here are the steps you should follow:  
 1. Determine the main category of the connectivity type: wired or wireless. If this cannot be identified, use "unknown_connectivity_type".  
 2. For wired connectivity:  
@@ -18,4 +18,5 @@ Here are the steps you should follow:
    - For a low Earth orbit satellite using Starlink technology in the Ku-band, record as "wireless > satellite > leo > technology_standard: Starlink > frequency_band: Ku-band" or "leo Starlink Ku-band".  
 5. If you come across a connectivity type that is not listed or known, use the appropriate "unknown" label from the classification.     
 Remember that the more specific and accurate the information you provide, the more useful it will be for the analysis of connectivity types. If you encounter any uncertainties or have questions about the classification, do not hesitate to ask for clarification.
+
 
