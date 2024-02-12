@@ -79,7 +79,7 @@ connectivity_type
 │   │   │   │
 │   │   │   └── unknown_p2a  
 │   │   │  
-│   │   ├── point-to-point (radiolink connecting only 2 points)  
+│   │   ├── point-to-point (radiolink, optical link or other connecting only 2 points)  
 │   │   │   │  
 │   │   │   ├── radio  
 │   │   │   │   │  
